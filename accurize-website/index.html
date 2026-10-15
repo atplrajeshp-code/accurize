@@ -1,0 +1,805 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Engineering Projects, Training &amp; College Workshops | Accurize Technologies</title>
+<meta content="Explore engineering project ideas, embedded systems and IoT training, robotics, PCB design, AI/ML projects, internships and college workshops with Accurize Technologies." name="description"/>
+<meta content="#090b1b" name="theme-color"/>
+<link rel="canonical" href="https://accurizetechnologiesweb.vercel.app/"/>
+<meta content="website" property="og:type"/>
+<meta property="og:title" content="Engineering Projects, Training &amp; College Workshops | Accurize Technologies"/>
+<meta property="og:description" content="Explore engineering project ideas, embedded systems and IoT training, robotics, PCB design, AI/ML projects, internships and college workshops with Accurize Technologies."/>
+<meta property="og:url" content="https://accurizetechnologiesweb.vercel.app/"/>
+<meta content="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" property="og:image"/>
+<link href="/assets/style.css" rel="stylesheet"/>
+<link href="/assets/page-designs.css" rel="stylesheet"/>
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Accurize Technologies Pvt. Ltd.",
+    "url": "https://accurizetechnologiesweb.vercel.app/",
+    "telephone": "+918142226479",
+    "email": "info@accurizetechnologies.com"
+  }
+  </script>
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Accurize Technologies",
+    "url": "https://accurizetechnologiesweb.vercel.app/"
+  }
+  </script>
+<style>
+    /* =====================================================
+       ACCURIZE TECHNOLOGIES - CINEMATIC HOMEPAGE
+       Animated background, glowing cards and moving images
+       ===================================================== */
+
+    
+
+body[data-page="home"] {
+  --night: #f5f8ff;
+  --panel: #ffffff;
+  --panel-light: #f1f6ff;
+  --white: #153b68;
+  --muted-light: #526985;
+  --cyan: #087fce;
+  --blue: #1769e0;
+  --purple: #7955df;
+  --pink: #dc55a5;
+  --orange: #e99a37;
+  --green: #079b86;
+  --line: #dbe6f5;
+
+  color: #183b65 !important;
+  background: #f5f8ff !important;
+}
+
+/* Soft moving multicolour background */
+body[data-page="home"]::before {
+  inset: -15%;
+  opacity: 1;
+  background:
+    radial-gradient(ellipse at 12% 15%, rgba(83, 169, 255, .17), transparent 34%),
+    radial-gradient(ellipse at 88% 18%, rgba(174, 133, 255, .15), transparent 32%),
+    radial-gradient(ellipse at 70% 75%, rgba(68, 220, 198, .13), transparent 34%),
+    radial-gradient(ellipse at 15% 85%, rgba(255, 151, 202, .12), transparent 30%),
+    linear-gradient(125deg, #f4f8ff, #ffffff, #f0f6ff, #f8f4ff, #f3fbff);
+  background-size: 200% 200%;
+  animation: accurizeLightFlow 22s ease-in-out infinite alternate;
+}
+
+body[data-page="home"]::after {
+  opacity: .25;
+  background-image:
+    linear-gradient(115deg, transparent 47%, rgba(23, 105, 224, .08) 48%, transparent 49%),
+    linear-gradient(25deg, transparent 65%, rgba(121, 85, 223, .07) 66%, transparent 67%);
+}
+
+/* Prevent dark backgrounds from reducing readability */
+body[data-page="home"] main,
+body[data-page="home"] main > section {
+  color: #183b65;
+  background: transparent !important;
+}
+
+body[data-page="home"] p {
+  color: #526985 !important;
+}
+
+body[data-page="home"] h1,
+body[data-page="home"] h2,
+body[data-page="home"] h3,
+body[data-page="home"] h4 {
+  color: #153b68 !important;
+}
+
+/* Clean white header */
+body[data-page="home"] .top {
+  color: #526985 !important;
+  background: rgba(255, 255, 255, .96) !important;
+  border-bottom: 1px solid #e0e9f7;
+}
+
+body[data-page="home"] .top a {
+  color: #1769e0 !important;
+}
+
+body[data-page="home"] .header {
+  background: rgba(255, 255, 255, .94) !important;
+  border-bottom: 1px solid #dce6f5;
+  box-shadow: 0 5px 24px rgba(36, 75, 130, .07);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+body[data-page="home"] .brand,
+body[data-page="home"] .brand small {
+  color: #183f70 !important;
+}
+
+body[data-page="home"] .logo {
+  color: #ffffff !important;
+  background: linear-gradient(135deg, #087fce, #1769e0, #7955df) !important;
+  border-radius: 13px;
+  box-shadow: 0 5px 18px rgba(23, 105, 224, .22);
+  animation: accurizeLogoGlow 5s ease-in-out infinite alternate;
+}
+
+body[data-page="home"] .links a {
+  color: #355577 !important;
+}
+
+body[data-page="home"] .links a:hover {
+  color: #087fce !important;
+  text-shadow: none;
+}
+
+body[data-page="home"] .mobile-menu-toggle {
+  color: #1769e0 !important;
+  background: #f0f6ff !important;
+  border: 1px solid #d5e5fb !important;
+}
+
+/* Blue primary buttons */
+body[data-page="home"] .btn {
+  color: #ffffff !important;
+  background: linear-gradient(110deg, #087fce, #1769e0, #4168db) !important;
+  background-size: 200% 200% !important;
+  border: 1px solid rgba(255, 255, 255, .6) !important;
+  border-radius: 10px;
+  box-shadow: 0 7px 19px rgba(23, 105, 224, .18);
+  animation: accurizeButtonFlow 8s ease infinite;
+  font-weight: 700;
+}
+
+body[data-page="home"] .btn:hover {
+  color: #ffffff !important;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 27px rgba(23, 105, 224, .3);
+}
+
+body[data-page="home"] .btn.secondary {
+  color: #1769e0 !important;
+  background: rgba(255, 255, 255, .95) !important;
+  border: 1px solid #bfd6f5 !important;
+  box-shadow: 0 5px 16px rgba(36, 75, 130, .07);
+}
+
+body[data-page="home"] .btn.secondary:hover {
+  background: #edf5ff !important;
+}
+
+/* Multicolour heading text */
+body[data-page="home"] .gradient {
+  color: #1769e0 !important;
+  background: linear-gradient(
+    90deg,
+    #087fce,
+    #4168db,
+    #7955df,
+    #dc55a5,
+    #079b86,
+    #087fce
+  ) !important;
+  background-size: 300% auto !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  animation: accurizeTextFlow 9s linear infinite;
+  filter: none;
+}
+
+body[data-page="home"] .eyebrow {
+  color: #087fce !important;
+  text-shadow: none;
+  letter-spacing: .08em;
+  animation: accurizeLabelPulse 4s ease-in-out infinite;
+}
+
+/* Hero section */
+body[data-page="home"] .hero {
+  background: transparent !important;
+}
+
+body[data-page="home"] .hero h1 {
+  color: #153b68 !important;
+  text-shadow: none;
+}
+
+body[data-page="home"] .hero .lead {
+  color: #526985 !important;
+}
+
+body[data-page="home"] .hero::before {
+  background: radial-gradient(circle, rgba(55, 160, 255, .16), transparent 70%);
+}
+
+body[data-page="home"] .hero::after {
+  background: radial-gradient(circle, rgba(184, 122, 255, .12), transparent 70%);
+}
+
+/* Image panel: white card with a cool gradient border */
+body[data-page="home"] .hero-card {
+  color: #183b65 !important;
+  background: rgba(255, 255, 255, .9) !important;
+  border: 1px solid #d5e5fb !important;
+  border-radius: 22px;
+  box-shadow: 0 18px 55px rgba(39, 79, 135, .13);
+  animation: accurizeCardGlow 8s ease-in-out infinite;
+}
+
+body[data-page="home"] .hero-photo-grid {
+  border-radius: 15px;
+}
+
+body[data-page="home"] .hero-photo {
+  background-color: #dbe8f8;
+}
+
+body[data-page="home"] .hero-photo::before,
+body[data-page="home"] .project-image::before {
+  background: linear-gradient(
+    130deg,
+    rgba(0, 150, 220, .08),
+    transparent 45%,
+    rgba(160, 76, 220, .16)
+  );
+}
+
+body[data-page="home"] .hero-card > p {
+  color: #526985 !important;
+}
+
+/* Blinking/glowing statistic boxes */
+body[data-page="home"] .stat {
+  background: linear-gradient(145deg, #ffffff, #f0f6ff) !important;
+  border: 1px solid #dce8f8 !important;
+  border-radius: 12px;
+  box-shadow: 0 5px 17px rgba(35, 81, 140, .06);
+  animation: accurizeBoxPulse 5s ease-in-out infinite;
+}
+
+body[data-page="home"] .stat b {
+  color: #087fce !important;
+}
+
+body[data-page="home"] .stat span {
+  color: #526985 !important;
+}
+
+/* Technology chips */
+body[data-page="home"] .chip-pill {
+  color: #315577 !important;
+  background: rgba(255, 255, 255, .88) !important;
+  border: 1px solid #d5e5fb !important;
+  box-shadow: 0 3px 12px rgba(39, 79, 135, .05);
+  animation: accurizeChipGlow 6s ease-in-out infinite;
+}
+
+body[data-page="home"] .chip-pill:nth-child(even) {
+  border-color: #e5d8fb !important;
+}
+
+/* Student and college cards */
+body[data-page="home"] .audience-card,
+body[data-page="home"] .card {
+  color: #183b65 !important;
+  background: linear-gradient(145deg, #ffffff, #f6f9ff) !important;
+  border: 1px solid #dce7f6 !important;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(39, 79, 135, .07);
+  animation: accurizeCardGlow 9s ease-in-out infinite;
+}
+
+body[data-page="home"] .audience-card:nth-child(even),
+body[data-page="home"] .card:nth-child(even) {
+  animation-delay: -4s;
+}
+
+body[data-page="home"] .audience-card h3,
+body[data-page="home"] .card h3 {
+  color: #153b68 !important;
+}
+
+body[data-page="home"] .audience-card:hover,
+body[data-page="home"] .card:hover {
+  border-color: #a8cafa !important;
+  box-shadow: 0 15px 38px rgba(23, 105, 224, .12);
+}
+
+body[data-page="home"] .audience-card:hover h3,
+body[data-page="home"] .card:hover h3 {
+  color: #087fce !important;
+}
+
+body[data-page="home"] .audience-card::before,
+body[data-page="home"] .card::before {
+  height: 3px;
+  background: linear-gradient(90deg, #087fce, #7955df, #dc55a5, #079b86);
+  background-size: 250% 100%;
+  animation: accurizeBorderFlow 8s linear infinite;
+}
+
+/* Feature boxes */
+body[data-page="home"] .feature {
+  color: #183b65 !important;
+  background: rgba(255, 255, 255, .92) !important;
+  border: 1px solid #dce7f6 !important;
+  border-radius: 13px;
+  box-shadow: 0 6px 20px rgba(39, 79, 135, .05);
+  animation: accurizeBoxPulse 6s ease-in-out infinite;
+}
+
+body[data-page="home"] .feature strong {
+  color: #087fce !important;
+}
+
+body[data-page="home"] .feature span {
+  color: #526985 !important;
+}
+
+/* Project catalogue cards */
+body[data-page="home"] .project-card {
+  background: #ffffff !important;
+  border: 1px solid #dce7f6 !important;
+  border-radius: 17px;
+  box-shadow: 0 10px 30px rgba(39, 79, 135, .08);
+  animation: accurizeBoxPulse 8s ease-in-out infinite;
+}
+
+body[data-page="home"] .project-card:hover {
+  border-color: #a7c9fa !important;
+  box-shadow: 0 17px 38px rgba(23, 105, 224, .14);
+}
+
+body[data-page="home"] .project-body h3 {
+  color: #153b68 !important;
+}
+
+body[data-page="home"] .project-body p {
+  color: #526985 !important;
+}
+
+body[data-page="home"] .tag {
+  color: #1769b5 !important;
+  background: #edf6ff !important;
+  border: 1px solid #cfe4fc !important;
+  border-radius: 999px;
+}
+
+body[data-page="home"] .more {
+  color: #087fce !important;
+}
+
+body[data-page="home"] .more:hover {
+  color: #7955df !important;
+  text-shadow: none;
+}
+
+/* Animated section headings */
+body[data-page="home"] .section-head h2 {
+  color: #153b68 !important;
+  background: linear-gradient(90deg, #153b68, #1769e0, #7955df, #153b68);
+  background-size: 250% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: accurizeTextFlow 12s linear infinite;
+}
+
+/* Feature icons */
+body[data-page="home"] .ico {
+  color: #1769e0 !important;
+  text-shadow: 0 3px 15px rgba(23, 105, 224, .14);
+}
+
+/* CTA band */
+body[data-page="home"] .band {
+  color: #183b65 !important;
+  background: linear-gradient(
+    120deg,
+    #eaf6ff,
+    #f1edff,
+    #fff0f7,
+    #e9fbf7
+  ) !important;
+  background-size: 250% 250% !important;
+  border: 1px solid #d4e3f7 !important;
+  border-radius: 20px;
+  box-shadow: 0 12px 34px rgba(39, 79, 135, .07);
+  animation: accurizeButtonFlow 14s ease infinite;
+}
+
+body[data-page="home"] .band h2 {
+  color: #153b68 !important;
+}
+
+body[data-page="home"] .band p {
+  color: #526985 !important;
+}
+
+/* FAQ */
+body[data-page="home"] .faq details {
+  color: #183b65 !important;
+  background: rgba(255, 255, 255, .92) !important;
+  border: 1px solid #dce7f6 !important;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(39, 79, 135, .04);
+}
+
+body[data-page="home"] .faq details[open] {
+  background: #f1f7ff !important;
+  border-color: #b9d7fc !important;
+}
+
+body[data-page="home"] .faq summary {
+  color: #153b68 !important;
+}
+
+body[data-page="home"] .faq summary:hover {
+  color: #087fce !important;
+}
+
+/* Footer stays dark for a professional visual finish */
+body[data-page="home"] .footer {
+  color: #edf4ff !important;
+  background: linear-gradient(125deg, #10294a, #142c50, #25244c) !important;
+  border-top: 1px solid rgba(150, 196, 255, .28);
+}
+
+body[data-page="home"] .footer h4,
+body[data-page="home"] .footer .brand,
+body[data-page="home"] .footer .brand small {
+  color: #ffffff !important;
+}
+
+body[data-page="home"] .footer p,
+body[data-page="home"] .footer a {
+  color: #d0def3 !important;
+}
+
+body[data-page="home"] .footer a:hover {
+  color: #77ddff !important;
+}
+
+body[data-page="home"] .copyright {
+  color: #c2d2eb;
+  border-top: 1px solid rgba(255, 255, 255, .16);
+}
+
+/* WhatsApp floating button */
+body[data-page="home"] .wa {
+  color: #ffffff !important;
+  background: linear-gradient(120deg, #08a66a, #0cbd83) !important;
+  border: 1px solid rgba(255, 255, 255, .65);
+  box-shadow: 0 7px 22px rgba(8, 166, 106, .24);
+  animation: accurizeWhatsAppFloat 4s ease-in-out infinite;
+}
+
+/* Entrance animation */
+body[data-page="home"] .reveal-ready {
+  transition: opacity .8s ease, transform .8s ease;
+}
+
+/* Animation definitions */
+@keyframes accurizeLightFlow {
+  0%   { background-position: 0% 0%; }
+  50%  { background-position: 100% 55%; }
+  100% { background-position: 10% 100%; }
+}
+
+@keyframes accurizeTextFlow {
+  from { background-position: 0% center; }
+  to   { background-position: 300% center; }
+}
+
+@keyframes accurizeButtonFlow {
+  0%, 100% { background-position: 0% 50%; }
+  50%      { background-position: 100% 50%; }
+}
+
+@keyframes accurizeLabelPulse {
+  0%, 100% { opacity: .88; }
+  50%      { opacity: 1; }
+}
+
+@keyframes accurizeLogoGlow {
+  from { box-shadow: 0 4px 14px rgba(23, 105, 224, .18); }
+  to   { box-shadow: 0 5px 23px rgba(121, 85, 223, .3); }
+}
+
+@keyframes accurizeCardGlow {
+  0%, 100% {
+    border-color: #dce7f6;
+  }
+  50% {
+    border-color: #c7d9fa;
+  }
+}
+
+@keyframes accurizeBoxPulse {
+  0%, 100% {
+    border-color: #dce7f6;
+    box-shadow: 0 7px 22px rgba(39, 79, 135, .055);
+  }
+  50% {
+    border-color: #c5d9fa;
+    box-shadow: 0 9px 25px rgba(79, 106, 200, .10);
+  }
+}
+
+@keyframes accurizeChipGlow {
+  0%, 100% { box-shadow: 0 3px 12px rgba(39, 79, 135, .04); }
+  50%      { box-shadow: 0 4px 16px rgba(23, 105, 224, .12); }
+}
+
+@keyframes accurizeBorderFlow {
+  from { background-position: 0% 50%; }
+  to   { background-position: 250% 50%; }
+}
+
+@keyframes accurizeWhatsAppFloat {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-4px); }
+}
+
+/* Mobile navigation */
+@media (max-width: 600px) {
+  body[data-page="home"] .links.mobile-open {
+    background: #ffffff !important;
+    border: 1px solid #d5e5fb !important;
+    box-shadow: 0 15px 35px rgba(28, 61, 108, .14);
+  }
+
+  body[data-page="home"] .links.mobile-open a {
+    color: #25496f !important;
+  }
+
+  body[data-page="home"] .links.mobile-open a:hover {
+    color: #087fce !important;
+  }
+}
+
+/* Respect reduced-motion accessibility settings */
+@media (prefers-reduced-motion: reduce) {
+  body[data-page="home"] *,
+  body[data-page="home"] *::before,
+  body[data-page="home"] *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  body[data-page="home"] .reveal-ready {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+  
+/* V4.10: high-contrast, multicolour homepage headings only */
+body[data-page="home"] .home-rainbow-heading{display:inline-block;position:relative;isolation:isolate;padding:10px 18px!important;margin:8px 0 12px!important;border-radius:14px;background:linear-gradient(115deg,#102b4b,#183f70 55%,#34235e)!important;border:1px solid #75bfff!important;box-shadow:0 8px 22px #123b6730, inset 0 1px 0 #ffffff30!important;color:#fff!important;text-shadow:0 2px 3px #00152b!important;line-height:1.35!important}
+body[data-page="home"] .home-rainbow-heading .rainbow-char{display:inline-block;font-weight:900!important;-webkit-text-fill-color:var(--letter-color)!important;color:var(--letter-color)!important;text-shadow:0 1px 2px #00152b,0 0 8px #ffffff25!important}
+body[data-page="home"] .hero h1.home-rainbow-heading{font-size:clamp(2.25rem,4.8vw,4.2rem)!important}
+body[data-page="home"] .section-head h2.home-rainbow-heading{font-size:clamp(1.55rem,3vw,2.4rem)!important}
+body[data-page="home"] .section-head{margin-bottom:26px!important}
+body[data-page="home"] .section-head .eyebrow{display:inline-block!important;background:#fff!important;color:#123b67!important;border:2px solid #65c7ff!important;border-radius:999px!important;padding:6px 14px!important;font-weight:900!important;box-shadow:0 4px 14px #123b671a!important}
+body[data-page="home"] .home-rainbow-heading .rainbow-space{display:inline-block;width:.28em}
+@media(max-width:600px){body[data-page="home"] .home-rainbow-heading{padding:9px 11px!important;border-radius:11px!important;max-width:100%;overflow-wrap:anywhere}body[data-page="home"] .hero h1.home-rainbow-heading{font-size:clamp(2rem,9vw,3rem)!important}}
+
+</style>
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<!-- SEO STRUCTURED DATA START -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Engineering Projects, Training & College Workshops | Accurize Technologies","url":"https://accurizetechnologiesweb.vercel.app/","description":"Explore engineering project ideas, embedded systems and IoT training, robotics, PCB design, AI/ML projects, internships and college workshops with Accurize Technologies.","inLanguage":"en"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://accurizetechnologiesweb.vercel.app/"},{"@type":"ListItem","position":2,"name":"Learn. Build. Innovate.","item":"https://accurizetechnologiesweb.vercel.app/"}]}</script>
+<!-- SEO STRUCTURED DATA END -->
+</head>
+<body data-family="home" data-layout="layout-2" data-page="home" data-topic="home">
+<div class="top">
+<div class="wrap">
+<span>Engineering Training · Academic Projects · College Programs</span>
+<span>
+        Call: <a href="tel:+918142226479">+91 8142226479</a>
+          |  
+        <a href="mailto:info@accurizetechnologies.com">info@accurizetechnologies.com</a>
+</span>
+</div>
+</div>
+<header class="header">
+<div class="wrap nav">
+<a class="brand" href="/">
+<img alt="Accurize Technologies logo" class="brand-logo-img" src="/assets/accurize-logo.jpeg"/ loading="eager" decoding="async"><span>ACCURIZE<small>TECHNOLOGIES PVT. LTD.</small></span>
+</a>
+<nav aria-label="Main navigation" class="links">
+<a href="/">Home</a><a href="/about/">About</a><a href="/projects/">Projects</a><a href="/training/">Trainings</a><a href="/internships/">Internships</a><a href="/college-services/">College Services</a><a href="/school-services/">School Services</a><a href="/contact/">Contact</a>
+</nav>
+</div>
+</header>
+<main>
+<section class="hero home-hero"><div class="wrap hero-grid home-hero-copy-only">
+<div><span class="eyebrow">Engineering · Education · Innovation</span><h1>Learn. Build. <span class="gradient">Innovate.</span></h1>
+<p class="lead">Empowering ideas. Delivering solutions. Explore practical projects, internships, training and education services from Accurize Technologies.</p>
+<div class="actions"><a class="btn" href="/projects/">Explore Projects ↗</a><a class="btn secondary" href="/enquiry/">Make an Enquiry ↗</a></div>
+<p class="brand-motto">Learn. Build. Innovate.</p></div>
+
+</div></section>
+<section class="domain-section"><div class="wrap"><div class="section-head"><span class="eyebrow">What we build</span><h2>Projects &amp; Domains We Serve</h2><p>Explore ideas and implementation across hardware, software and intelligent systems.</p></div><div class="domain-grid"><article class="domain-card"><span class="domain-number">01</span><h3>Embedded Systems</h3><p>Practical concepts, guided development and implementation support.</p><a href="/projects/">Explore domain →</a></article><article class="domain-card"><span class="domain-number">02</span><h3>Internet of Things (IoT)</h3><p>Practical concepts, guided development and implementation support.</p><a href="/projects/">Explore domain →</a></article><article class="domain-card"><span class="domain-number">03</span><h3>IoT with Machine Learning</h3><p>Practical concepts, guided development and implementation support.</p><a href="/projects/">Explore domain →</a></article><article class="domain-card"><span class="domain-number">04</span><h3>Web Design</h3><p>Practical concepts, guided development and implementation support.</p><a href="/projects/">Explore domain →</a></article><article class="domain-card"><span class="domain-number">05</span><h3>Machine Learning</h3><p>Practical concepts, guided development and implementation support.</p><a href="/projects/">Explore domain →</a></article><article class="domain-card"><span class="domain-number">06</span><h3>AI Applications</h3><p>Practical concepts, guided development and implementation support.</p><a href="/projects/">Explore domain →</a></article><article class="domain-card"><span class="domain-number">07</span><h3>Electrical Hardware</h3><p>Practical concepts, guided development and implementation support.</p><a href="/projects/">Explore domain →</a></article><article class="domain-card"><span class="domain-number">08</span><h3>All CSE Projects</h3><p>Practical concepts, guided development and implementation support.</p><a href="/projects/">Explore domain →</a></article></div><div class="actions"><a class="btn" href="/projects/">Explore All Projects ↗</a></div></div></section>
+<section class="domain-section alt"><div class="wrap"><div class="section-head"><span class="eyebrow">Career development</span><h2>Internships</h2><p>Choose a learning path that fits your timeline and goals.</p></div><div class="service-grid"><article class="service-tile"><h3>Short-Term Internships</h3><p>Focused practical learning with guided activities and project exposure.</p></article><article class="service-tile"><h3>Long-Term Internships</h3><p>Extended hands-on experience with progressive tasks and project development.</p></article></div><h3 class="subheading">Internship domains</h3><div class="chip-cloud"><span class="chip-pill">Embedded Systems</span><span class="chip-pill">Internet of Things (IoT)</span><span class="chip-pill">IoT with Machine Learning</span><span class="chip-pill">Web Design</span><span class="chip-pill">Machine Learning</span><span class="chip-pill">AI Applications</span><span class="chip-pill">Electrical Hardware</span><span class="chip-pill">All CSE Projects</span></div><div class="actions"><a class="btn" href="/internships/">Explore Internships ↗</a></div></div></section>
+<section class="domain-section"><div class="wrap"><div class="section-head"><span class="eyebrow">Practical learning</span><h2>Technical Trainings</h2><p>Hands-on training programs using the same technology domains covered in our projects.</p></div><div class="chip-cloud"><span class="chip-pill">Embedded Systems</span><span class="chip-pill">Internet of Things (IoT)</span><span class="chip-pill">IoT with Machine Learning</span><span class="chip-pill">Web Design</span><span class="chip-pill">Machine Learning</span><span class="chip-pill">AI Applications</span><span class="chip-pill">Electrical Hardware</span><span class="chip-pill">All CSE Projects</span></div><div class="actions"><a class="btn" href="/training/">Explore Trainings ↗</a></div></div></section>
+<section class="domain-section alt"><div class="wrap"><div class="service-grid"><article class="service-tile"><h2>College Services</h2><p>Workshops, guest lectures, seminars, bootcamps, hackathons, faculty development and hands-on project programs.</p><a class="btn" href="/college-services/">Explore College Services ↗</a></article><article class="service-tile"><h2>School Services</h2><p>STEM education, robotics classes and working models for school exhibitions.</p><a class="btn" href="/school-services/">Explore School Services ↗</a></article></div></div></section>
+<section class="domain-section"><div class="wrap"><div class="band"><div><h2>Have an idea to build?</h2><p>Tell us your branch, domain, timeline and expected outcome.</p><p class="brand-motto">Learn. Build. Innovate.</p></div><a class="btn" href="/enquiry/">Make an Enquiry ↗</a></div></div></section>
+</main>
+<!-- FOOTER -->
+<footer class="footer">
+<div class="wrap">
+<div class="footgrid">
+<div>
+<a class="brand" href="/">
+<img alt="Accurize Technologies logo" class="brand-logo-img" src="/assets/accurize-logo.jpeg"/ loading="lazy" decoding="async"><span>ACCURIZE<small>TECHNOLOGIES PVT. LTD.</small></span>
+</a>
+<p>Practical engineering training, academic projects and technical programs for students, colleges and teams.</p>
+<p>
+<a href="tel:+918142226479">+91 8142226479</a><br/>
+<a href="mailto:info@accurizetechnologies.com">info@accurizetechnologies.com</a>
+</p>
+</div>
+<div>
+<h4>Explore</h4>
+<a href="/about/">About us</a>
+<a href="/services/">Services</a>
+<a href="/training/">Training programs</a>
+<a href="/projects/">Academic projects</a>
+</div>
+<div>
+<h4>For Institutions</h4>
+<a href="/for-colleges/workshops/">College workshops</a>
+<a href="/for-colleges/faculty-programs/">Faculty programs</a>
+<a href="/for-colleges/hackathons/">Hackathons</a>
+<a href="/for-colleges/request-proposal/">Request a proposal</a>
+</div>
+<div>
+<h4>Information</h4>
+<a href="/resources/">Resources</a>
+<a href="/testimonials/">Testimonials</a>
+<a href="/contact/">Contact</a>
+<a href="/privacy-policy/">Privacy policy</a>
+<a href="/terms-and-conditions/">Terms</a>
+</div>
+</div>
+<div class="copyright">
+<span>© 2026 Accurize Technologies Pvt. Ltd. All rights reserved.</span>
+<span>Built for practical learning and engineering innovation.</span>
+</div>
+</div>
+<div class="global-motto">Learn. Build. Innovate.</div></footer>
+<script>
+    /* Mobile navigation */
+    (function () {
+      const button = document.querySelector(".mobile-menu-toggle");
+      const nav = document.querySelector(".links");
+
+      if (!button || !nav) return;
+
+      button.addEventListener("click", function () {
+        const isOpen = nav.classList.toggle("mobile-open");
+
+        button.setAttribute("aria-expanded", String(isOpen));
+        button.setAttribute(
+          "aria-label",
+          isOpen ? "Close navigation" : "Open navigation"
+        );
+        button.textContent = isOpen ? "✕ Close" : "☰ Menu";
+      });
+
+      nav.querySelectorAll("a").forEach(function (link) {
+        link.addEventListener("click", function () {
+          nav.classList.remove("mobile-open");
+          button.setAttribute("aria-expanded", "false");
+          button.setAttribute("aria-label", "Open navigation");
+          button.textContent = "☰ Menu";
+        });
+      });
+    })();
+
+    /* Cinematic entrance animations as sections appear on screen */
+    (function () {
+      const elements = document.querySelectorAll(".reveal-ready");
+
+      if (!("IntersectionObserver" in window)) {
+        elements.forEach(function (element) {
+          element.classList.add("is-visible");
+        });
+        return;
+      }
+
+      const observer = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        {
+          threshold: 0.08,
+          rootMargin: "0px 0px -35px 0px"
+        }
+      );
+
+      elements.forEach(function (element) {
+        observer.observe(element);
+      });
+    })();
+  </script>
+<script defer="" src="/assets/site.js"></script>
+
+<script>
+(function(){
+  if(!document.body || document.body.dataset.page!=='home') return;
+  const colors=['#55D6FF','#FFD166','#FF7A90','#A7F36B','#C6A7FF','#FFFFFF','#FFB86B'];
+  function rainbow(el){if(!el||el.dataset.rainbowReady==='1')return;const raw=el.textContent;el.textContent='';let i=0;for(const ch of raw){if(ch===' '){const sp=document.createElement('span');sp.className='rainbow-space';sp.textContent=' ';el.appendChild(sp);continue;}const span=document.createElement('span');span.className='rainbow-char';span.style.setProperty('--letter-color',colors[i++%colors.length]);span.textContent=ch;el.appendChild(span);}el.dataset.rainbowReady='1';el.classList.add('home-rainbow-heading');}
+  document.querySelectorAll('.home-hero h1, main > .domain-section .section-head h2').forEach(rainbow);
+})();
+</script>
+
+</body>
+</html>
+
+<style>
+/* Final clean homepage and readable branding/navigation */
+body[data-page="home"] .hero::before, body[data-page="home"] .hero:before, body[data-page="home"] .hero::after, body[data-page="home"] .hero:after { display:none!important; content:none!important; background:none!important; }
+body[data-page="home"] .hero, body[data-page="home"] .home-hero { background:transparent!important; box-shadow:none!important; }
+body[data-page="home"] .home-hero .hero-grid { display:block!important; max-width:1000px; }
+.brand-logo-img, .brand-logo-image { width:68px!important;height:68px!important;max-width:68px!important;object-fit:contain!important;border-radius:0!important;background:transparent!important;box-shadow:none!important; }
+.brand { gap:14px!important;font-size:clamp(20px,1.8vw,26px)!important; }
+.brand > span { font-size:clamp(20px,1.8vw,26px)!important;line-height:1.1!important; }
+.brand small { font-size:12px!important;letter-spacing:1.5px!important; }
+.links { gap:clamp(12px,1.25vw,22px)!important; }
+.links a { font-size:clamp(14px,1vw,16px)!important;font-weight:700!important;padding:8px 0!important; }
+@media(max-width:900px){.brand-logo-img,.brand-logo-image{width:58px!important;height:58px!important}.links a{font-size:14px!important}}
+
+
+/* V4.9 HOMEPAGE ONLY — vibrant typography, colorful panel borders and cards */
+body[data-page="home"] .hero{border:1px solid #b8d9ff!important;border-radius:0 0 28px 28px!important;background:linear-gradient(125deg,#eef7ff 0%,#ffffff 45%,#f6efff 100%)!important;box-shadow:inset 0 -5px 0 #d8e9ff}
+body[data-page="home"] .hero h1{color:#143d70!important;text-shadow:0 2px 0 #fff}
+body[data-page="home"] .hero .lead{color:#435c7d!important}
+body[data-page="home"] .hero .eyebrow{background:linear-gradient(90deg,#e0f2ff,#f0e9ff)!important;border-color:#b7d6ff!important;color:#2459b2!important}
+body[data-page="home"] .domain-section{position:relative;border-top:1px solid #d8e6f8;border-bottom:1px solid #e1eaf7;background:linear-gradient(135deg,#f4f9ff,#fff 58%,#f6f2ff)!important}
+body[data-page="home"] .domain-section.alt{background:linear-gradient(125deg,#fff8ef,#fff 52%,#eefbf8)!important;border-color:#f1dfc9}
+body[data-page="home"] .section-head h2,body[data-page="home"] .subheading{color:#154b85!important;text-shadow:0 1px 0 #fff}
+body[data-page="home"] .section-head p{color:#536b86!important}
+body[data-page="home"] .domain-grid{gap:18px!important}
+body[data-page="home"] .domain-card{--home-accent:#1675d1;position:relative!important;overflow:hidden!important;background:linear-gradient(150deg,#fff,#f2f8ff)!important;border:1.5px solid color-mix(in srgb,var(--home-accent) 45%,#fff)!important;border-radius:16px!important;box-shadow:0 8px 24px color-mix(in srgb,var(--home-accent) 12%,transparent)!important;transition:transform .22s ease,box-shadow .22s ease!important}
+body[data-page="home"] .domain-card:nth-child(4n+2){--home-accent:#7b4bd1;background:linear-gradient(150deg,#fff,#f8f2ff)!important}
+body[data-page="home"] .domain-card:nth-child(4n+3){--home-accent:#0a9b87;background:linear-gradient(150deg,#fff,#effbf8)!important}
+body[data-page="home"] .domain-card:nth-child(4n){--home-accent:#e78328;background:linear-gradient(150deg,#fff,#fff6eb)!important}
+body[data-page="home"] .domain-card:before{content:"";position:absolute;inset:0 auto 0 0;width:5px;background:linear-gradient(180deg,var(--home-accent),color-mix(in srgb,var(--home-accent) 30%,white))}
+body[data-page="home"] .domain-card:hover{transform:translateY(-5px)!important;border-color:var(--home-accent)!important;box-shadow:0 16px 32px color-mix(in srgb,var(--home-accent) 19%,transparent)!important}
+body[data-page="home"] .domain-card h3{color:var(--home-accent)!important;font-weight:800!important}
+body[data-page="home"] .domain-card p{color:#536780!important}
+body[data-page="home"] .domain-card a{color:var(--home-accent)!important;font-weight:800!important;text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--home-accent) 35%,white);padding-bottom:2px}
+body[data-page="home"] .domain-number{color:var(--home-accent)!important;background:color-mix(in srgb,var(--home-accent) 10%,white)!important;border:1px solid color-mix(in srgb,var(--home-accent) 25%,white)!important;border-radius:10px!important}
+body[data-page="home"] .service-grid{gap:22px!important}
+body[data-page="home"] .service-tile{border:1.5px solid #b8d8f6!important;border-radius:18px!important;background:linear-gradient(145deg,#fff,#f1f8ff)!important;box-shadow:0 10px 28px #1c5b9412!important;transition:transform .2s ease,box-shadow .2s ease!important}
+body[data-page="home"] .service-tile:nth-child(2){border-color:#b9e6d9!important;background:linear-gradient(145deg,#fff,#effbf7)!important}
+body[data-page="home"] .service-tile:hover{transform:translateY(-4px)!important;box-shadow:0 15px 32px #1c5b941c!important}
+body[data-page="home"] .service-tile h2,body[data-page="home"] .service-tile h3{color:#145da1!important}
+body[data-page="home"] .service-tile p{color:#526982!important}
+body[data-page="home"] .chip-pill{color:#2455a0!important;background:linear-gradient(120deg,#eaf4ff,#f1edff)!important;border:1px solid #c8d9fa!important;border-radius:999px!important;box-shadow:0 3px 9px #315a9010!important}
+body[data-page="home"] .chip-pill:nth-child(3n+2){color:#087b6c!important;background:linear-gradient(120deg,#e9faf5,#effcf9)!important;border-color:#bde8dc!important}
+body[data-page="home"] .chip-pill:nth-child(3n){color:#a85b12!important;background:linear-gradient(120deg,#fff2df,#fff8ed)!important;border-color:#f2d7b5!important}
+body[data-page="home"] .band{border:1px solid #3c6fae!important;border-radius:22px!important;background:linear-gradient(115deg,#123b70,#2456a0 58%,#593b9d)!important;box-shadow:0 16px 36px #173d7026!important;color:#fff!important}
+body[data-page="home"] .band h2{color:#fff!important}
+body[data-page="home"] .band p{color:#e7f1ff!important}
+body[data-page="home"] .band .brand-motto{color:#ffdf9b!important;font-weight:800!important}
+body[data-page="home"] .actions .btn{border:1px solid #8ecbff!important;box-shadow:0 7px 18px #1769e02b!important}
+@media(max-width:700px){body[data-page="home"] .domain-card,body[data-page="home"] .service-tile{border-radius:13px!important}body[data-page="home"] .band{border-radius:15px!important}}
+
+</style>
