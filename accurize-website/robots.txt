@@ -4,4 +4,4 @@ Allow: /
 # Do not crawl utility/error pages
 Disallow: /404.html
 
-Sitemap: https://accurizetechnologiesweb.vercel.app/sitemap.xml
+Sitemap: https://accurize.vercel.app/sitemap.xml
